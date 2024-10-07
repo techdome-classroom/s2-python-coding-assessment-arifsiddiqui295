@@ -1,5 +1,5 @@
 def isValid(s: str) -> bool:
-   
+    
     bracket_map = {')': '(', '}': '{', ']': '['}
     stack = []
     
@@ -9,17 +9,16 @@ def isValid(s: str) -> bool:
             
             top_element = stack.pop() if stack else '#'
             
-            
+          
             if bracket_map[char] != top_element:
                 return False
         else:
             
             stack.append(char)
     
-   
     return not stack
 
 
-print(isValid("()"))       # Output: True
-print(isValid("()[]{}"))   # Output: True
-print(isValid("(]"))       # Output: False
+print(isValid("()"))      
+print(isValid("()[]{}"))  
+print(isValid("(]"))       
