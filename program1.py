@@ -1,9 +1,9 @@
 def isValid(s: str) -> bool:
-    # Dictionary to store matching pairs
+   
     bracket_map = {')': '(', '}': '{', ']': '['}
     stack = []
     
-    # Traverse each character in the string
+    
     for char in s:
         if char in bracket_map:
             
