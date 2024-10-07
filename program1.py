@@ -19,7 +19,7 @@ def isValid(s: str) -> bool:
     # If the stack is empty, all brackets were properly closed
     return not stack
 
-# Test examples
+
 print(isValid("()"))       # Output: True
 print(isValid("()[]{}"))   # Output: True
 print(isValid("(]"))       # Output: False
